@@ -4,13 +4,7 @@
 //  formatting you like.
 //
 //Requirements:
-//* Store your favorite color in a variable using the `var` keyword
-//* Store your birth year and age (in years) in two variables using
-//  compound assignment
-//* Store your first & last initials in two variables using block assignment
-//* Declare (but don't assign!) a variable for your age (in days),
-//  then assign it on the next line by multiplying 365 with the age
-// 	variable created earlier
+
 //
 //Notes:
 //* Use fmt.Println() to print out information
@@ -25,5 +19,24 @@ package main
 import "fmt"
 
 func main() {
-}
+	//* Store your favorite color in a variable using the `var` keyword
+	var favoriteColor string = "black"
+	fmt.Println(favoriteColor)
 
+	//* Store your birth year and age (in years) in two variables using
+	//  compound assignment
+	//var birthYear, age int = 1995, 30
+	birthYear, age := 1995, 30
+	fmt.Println("birthYear", birthYear, "age", age)
+
+	//* Store your first & last initials in two variables using block assignment
+	var (
+		firstInitial string = "S"
+		lastInitial  string = "M"
+	)
+	fmt.Println(firstInitial, lastInitial)
+
+	var myAgeInDays int
+	myAgeInDays = 10000
+	fmt.Println("myAgeInDays", myAgeInDays)
+}
