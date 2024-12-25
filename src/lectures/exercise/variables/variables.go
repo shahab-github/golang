@@ -3,9 +3,6 @@
 //  creation techniques. The information may be printed using any
 //  formatting you like.
 //
-//Requirements:
-
-//
 //Notes:
 //* Use fmt.Println() to print out information
 //* Basic math operations are:
