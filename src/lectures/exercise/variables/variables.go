@@ -22,18 +22,18 @@ func main() {
 
 	//* Store your birth year and age (in years) in two variables using
 	//  compound assignment
-	//var birthYear, age int = 1995, 30
-	birthYear, age := 1995, 30
+	//var birthYear, age int = 1990, 35
+	birthYear, age := 1990, 35
 	fmt.Println("birthYear", birthYear, "age", age)
 
 	//* Store your first & last initials in two variables using block assignment
 	var (
-		firstInitial string = "S"
-		lastInitial  string = "M"
+		firstInitial = 'S'
+		lastInitial  = 'M'
 	)
 	fmt.Println(firstInitial, lastInitial)
 
 	var myAgeInDays int
-	myAgeInDays = 10000
+	myAgeInDays = 365 * age
 	fmt.Println("myAgeInDays", myAgeInDays)
 }
