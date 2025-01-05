@@ -2,7 +2,26 @@ package main
 
 import "fmt"
 
-func main() {
-
+func printSlice(title string, slice []string) {
+	fmt.Println()
+	fmt.Println("---", title, "---")
+	for i := 0; i < len(slice); i++ {
+		element := slice[i]
+		fmt.Println(element)
+	}
 }
 
+func main() {
+	route := []string{"Grocery", "Department Store", "Salon"}
+	printSlice("Route1", route)
+
+	route = append(route, "Home")
+	printSlice("Route2", route)
+
+	fmt.Println()
+	fmt.Println(route[0], "visted")
+	fmt.Println(route[1], "visited")
+
+	route = route[2:]
+	printSlice("Remaining Locations", route)
+}
